@@ -1,0 +1,651 @@
+/* #region common */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1110px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Inter Tight", sans-serif;
+  background-color: #fbfbfb;
+  color: #fbfbfb;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+}
+/* #endregion common */
+
+/* #region Header-Section */
+
+.header-container {
+  display: flex;
+  padding-top: 32px;
+  white-space: nowrap;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.logo-name {
+  margin-right: 366px;
+  fill: #fbfbfb;
+  display: flex;
+  align-items: baseline;
+}
+
+.header-logo-icon {
+  margin-right: 7px;
+}
+
+.menu {
+  display: flex;
+  text-transform: capitalize;
+  gap: 8px;
+}
+
+.menu-item {
+  border: 1px solid #fbfbfb;
+  border-radius: 12px;
+  padding: 12px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  background-color: transparent;
+  transition: border 150ms ease-in-out 0ms, color 150ms ease-in-out 0ms,
+    background-color 150ms ease-in-out 150ms;
+}
+
+.menu-item:hover {
+  border: 1px solid #d4bfc4;
+  color: #7a3145;
+  background-color: #d4bfc4;
+}
+
+.menu-item:focus {
+  border: 1px solid #fbfbfb;
+  color: #7a3145;
+  background-color: #fbfbfb;
+}
+
+.btn {
+  display: block;
+  border-radius: 30px;
+  padding: 16px 32px;
+  cursor: pointer;
+  background: #7a3145;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  transition: color 150ms ease-in-out 0ms,
+    background-color 150ms ease-in-out 150ms;
+}
+
+.btn:hover {
+  color: #7a3145;
+  background-color: #d4bfc4;
+}
+
+.btn:focus {
+  color: #7a3145;
+  background-color: #fbfbfb;
+}
+
+.header-section {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  background: transparent;
+}
+
+/* #endregion Header-Section */
+
+/* #region Hero-Section */
+
+.hero-section {
+  background-color: #576f35;
+}
+
+.hero-container {
+  display: flex;
+}
+
+.hero-left {
+  padding-top: 232px;
+  margin-right: 38px;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 76px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  padding-bottom: 128px;
+  width: 502px;
+}
+
+.hero-description {
+  font-weight: 500;
+  max-width: 460px;
+  padding-bottom: 52px;
+}
+/* #endregion Hero-Section */
+
+/* #region Vegetable-bascet-section */
+.vegetable-bascet {
+  background-color: #7a3145;
+}
+
+.bascet-container {
+  display: flex;
+  justify-content: center;
+}
+
+.vegetable-bascet-left {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-right: 100px;
+  background-color: #7a3145;
+}
+
+.vegetable-bascet-img {
+  border-radius: 30px;
+}
+
+.steps-container {
+  background: #576f35;
+  margin-right: -100px;
+}
+
+.steps {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  padding: 100px 100px 24px 100px;
+}
+
+.basket,
+.easy-steps {
+  color: #d4bfc4;
+}
+
+.steps-description {
+  font-weight: 500;
+  margin-right: 100px;
+  margin-bottom: 104px;
+  margin-left: 100px;
+}
+
+.three-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  background-color: #fbfbfb;
+  border-radius: 15px;
+  padding: 12px 25px 12px 24px;
+}
+
+.number {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  border: solid 5px #d4bfc4;
+  border-radius: 100%;
+  padding: 11px 18px;
+  background-color: #7a3145;
+  margin-right: 24px;
+}
+
+.step-text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #858585;
+}
+
+.text {
+  font-weight: 700;
+  color: #141414;
+}
+
+/* #endregion Vegetable-bascet-Section */
+
+/* #region Discount-Section */
+.discount-text {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 600;
+  font-size: 76px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #141414;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.discount-procent {
+  border-radius: 12px;
+  width: 808px;
+  height: 84px;
+  background: #576f35;
+  color: #fbfbfb;
+}
+/* #endregion Discount-Section */
+
+/* #region Organic-vegetables-Section */
+.organic-vegetables {
+  background: #7a3145;
+  padding: 100px;
+}
+
+.organic-vegetables-title {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  width: 508px;
+}
+
+.organic-vegetables-description {
+  font-weight: 500;
+  width: 626px;
+  margin-bottom: 52px;
+}
+
+.vegetables {
+  color: #d4bfc4;
+}
+
+.vegetables-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.vegetables-item {
+  flex-direction: column;
+  background: #fbfbfb;
+  width: calc((100% - 2 * 24px) / 3);
+  display: flex;
+  border-radius: 40px;
+  padding: 32px;
+}
+
+.vegetable-name {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #7a3145;
+  margin-bottom: 12px;
+}
+
+.price {
+  font-weight: 500;
+  color: #141414;
+  margin-bottom: 8px;
+}
+/* #endregion Organic-vegetables-Section */
+
+/* #region Reviwers-Section */
+.our-reviwers {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.our-customers {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #141414;
+  width: 553px;
+  margin-bottom: 24px;
+}
+
+.costomers {
+  color: #576f35;
+}
+
+.reviwers-description {
+  font-weight: 500;
+  color: #141414;
+  width: 553px;
+  margin-bottom: 52px;
+}
+
+.reviwer-list {
+  display: flex;
+  gap: 24px;
+}
+
+.step-text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #858585;
+}
+
+.text {
+  font-weight: 700;
+  color: #141414;
+}
+
+.reviwer-item {
+  background: #fbfbfb;
+  width: calc((100% - 2 * 24px) / 3);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #d4bfc4;
+  border-radius: 24px;
+  padding: 20px;
+}
+
+.reviwer-img {
+  margin-bottom: 24px;
+}
+
+.reviwer {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  text-transform: uppercase;
+  text-align: center;
+  color: #141414;
+  margin-bottom: 8px;
+}
+
+.reviwer-text {
+  font-weight: 500;
+  text-align: center;
+  color: #858585;
+  width: 280px;
+}
+/* #endregion Reviwers-Section */
+
+/* #region Fresh-Harvest-Section */
+.fresh-harvest {
+  background-color: #576f35;
+  padding: 100px;
+}
+
+.fresh-harvest-title {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  width: 751px;
+  margin-bottom: 24px;
+}
+
+.harvest {
+  color: #d4bfc4;
+}
+
+.fresh-harvest-description {
+  font-weight: 500;
+  color: #fbfbfb;
+  width: 742px;
+  margin-bottom: 52px;
+}
+
+.form-img {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.form-fild {
+  display: flex;
+  flex-direction: column;
+  padding: 52px 48px;
+  border-radius: 30px;
+  width: 524px;
+  height: 592px;
+  background-color: #fbfbfb;
+}
+
+.form-description {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #141414;
+  margin-bottom: 52px;
+}
+
+.from-us {
+  color: #7a3145;
+}
+
+.the-form {
+  color: #576f35;
+}
+
+.name {
+  border: 1px solid #858585;
+  border-radius: 30px;
+  width: 428px;
+  height: 52px;
+  padding: 16px 14px;
+  margin-bottom: 16px;
+}
+
+.email {
+  border: 1px solid #858585;
+  border-radius: 30px;
+  width: 428px;
+  height: 52px;
+  padding: 16px 14px;
+  margin-bottom: 16px;
+}
+
+.comment {
+  border: 1px solid #858585;
+  border-radius: 15px;
+  width: 428px;
+  height: 96px;
+  padding: 16px 14px;
+  margin-bottom: 24px;
+}
+
+.name::placeholder,
+.email::placeholder,
+.comment::placeholder {
+  font-weight: 500;
+  text-align: start;
+  color: #141414;
+}
+
+.btn-send {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  border-radius: 30px;
+  padding: 16px 191px;
+  width: 428px;
+  height: 52px;
+  background: #7a3145;
+  cursor: pointer;
+  transition: color 150ms ease-in-out 0ms,
+    background-color 150ms ease-in-out 150ms;
+}
+
+.btn-send:hover {
+  color: #7a3145;
+  background-color: #d4bfc4;
+}
+
+.btn-send:focus {
+  color: #7a3145;
+  background-color: #fbfbfb;
+}
+
+.img-social-media {
+  border-radius: 30px;
+  padding: 52px 48px;
+  width: 524px;
+  height: 592px;
+  background: #7a3145;
+}
+
+.fres-harvest-img {
+  border-radius: 15px;
+  margin-bottom: 80px;
+}
+
+.social-networks {
+  font-weight: 700;
+  color: #d4bfc4;
+  margin-bottom: 16px;
+}
+
+.social-network-list {
+  display: flex;
+  justify-content: start;
+}
+
+.social-links {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  text-transform: uppercase;
+}
+
+.instagram::after,
+.facebook::after {
+  content: "/";
+  margin: 0 12px;
+  color: #fbfbfb;
+}
+
+/* #endregion Fresh-Harvest-Section */
+
+/* #region Footer-Section */
+.footer-section {
+  padding-top: 52px;
+  padding-bottom: 52px;
+  background-color: #7a3145;
+}
+
+.logo-menu-address {
+  display: flex;
+  margin-bottom: 124px;
+}
+
+.footer-logo-menu {
+  margin-right: 250px;
+}
+
+.footer-logo-name {
+  fill: #fbfbfb;
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-logo-icon {
+  margin-right: 7px;
+}
+
+.footer-description {
+  font-weight: 500;
+  color: #fbfbfb;
+  width: 265px;
+  margin-top: 24px;
+}
+
+.footer-menu {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  margin-right: 121px;
+  width: 228px;
+  height: 144px;
+}
+
+.footer-menu li {
+  white-space: nowrap;
+  margin-bottom: 24px;
+}
+
+.tel-place {
+  text-align: center;
+  width: 200px;
+  font-style: normal;
+  font-weight: 700;
+  color: #fbfbfb;
+}
+
+.tel {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.policy {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  color: #d4bfc4;
+}
+
+.policy-setting-list {
+  display: flex;
+}
+
+.privacy-policy::after {
+  content: "/";
+  margin: 0 12px;
+}
+/* #endregion Footer-Section */
