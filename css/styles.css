@@ -14,7 +14,7 @@ img {
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1310px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -42,14 +42,34 @@ a {
   color: inherit;
   font-style: normal;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* #endregion common */
 
 /* #region Header-Section */
-
 .header-container {
+  position: relative;
+}
+
+.heder-position {
+  position: absolute;
   display: flex;
-  padding-top: 32px;
-  white-space: nowrap;
+  top: 32px;
+  left: 115px;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent;
 }
 
 .header-nav {
@@ -103,7 +123,7 @@ a {
   border-radius: 30px;
   padding: 16px 32px;
   cursor: pointer;
-  background: #7a3145;
+  background-color: #7a3145;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.11;
@@ -124,28 +144,18 @@ a {
   background-color: #fbfbfb;
 }
 
-.header-section {
-  position: absolute;
-  width: 100%;
-  z-index: 10;
-  background: transparent;
-}
-
 /* #endregion Header-Section */
 
 /* #region Hero-Section */
 
-.hero-section {
+.hero {
   background-color: #576f35;
-}
-
-.hero-container {
-  display: flex;
-}
-
-.hero-left {
   padding-top: 232px;
-  margin-right: 38px;
+  padding-right: 100px;
+  padding-left: 100px;
+  background-image: url(../images/hero-vegetables.jpg);
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
 }
 
 .hero-title {
@@ -166,20 +176,14 @@ a {
 /* #endregion Hero-Section */
 
 /* #region Vegetable-bascet-section */
-.vegetable-bascet {
-  background-color: #7a3145;
-}
-
 .bascet-container {
+  background-color: #7a3145;
   display: flex;
   justify-content: center;
 }
 
 .vegetable-bascet-left {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  margin-right: 100px;
-  background-color: #7a3145;
+  padding: 100px;
 }
 
 .vegetable-bascet-img {
@@ -188,7 +192,7 @@ a {
 
 .steps-container {
   background: #576f35;
-  margin-right: -100px;
+  padding: 100px;
 }
 
 .steps {
@@ -196,8 +200,7 @@ a {
   font-size: 32px;
   line-height: 1;
   text-transform: uppercase;
-  color: #fbfbfb;
-  padding: 100px 100px 24px 100px;
+  padding-bottom: 24px;
 }
 
 .basket,
@@ -207,18 +210,13 @@ a {
 
 .steps-description {
   font-weight: 500;
-  margin-right: 100px;
-  margin-bottom: 104px;
-  margin-left: 100px;
+  padding-bottom: 104px;
 }
 
 .three-steps {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding-right: 100px;
-  padding-bottom: 100px;
-  padding-left: 100px;
 }
 
 .step {
@@ -257,6 +255,10 @@ a {
 /* #endregion Vegetable-bascet-Section */
 
 /* #region Discount-Section */
+.discount-wraper {
+  padding: 100px;
+}
+
 .discount-text {
   font-family: "Inter Tight", sans-serif;
   font-weight: 600;
@@ -264,22 +266,20 @@ a {
   line-height: 1;
   text-transform: uppercase;
   color: #141414;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .discount-procent {
   border-radius: 12px;
   width: 808px;
   height: 84px;
-  background: #576f35;
+  background-color: #576f35;
   color: #fbfbfb;
 }
 /* #endregion Discount-Section */
 
 /* #region Organic-vegetables-Section */
-.organic-vegetables {
-  background: #7a3145;
+.organic-wrapper {
+  background-color: #7a3145;
   padding: 100px;
 }
 
@@ -310,7 +310,7 @@ a {
 
 .vegetables-item {
   flex-direction: column;
-  background: #fbfbfb;
+  background-color: #fbfbfb;
   width: calc((100% - 2 * 24px) / 3);
   display: flex;
   border-radius: 40px;
@@ -334,9 +334,8 @@ a {
 /* #endregion Organic-vegetables-Section */
 
 /* #region Reviwers-Section */
-.our-reviwers {
-  padding-top: 100px;
-  padding-bottom: 100px;
+.reviwer-wrapper {
+  padding: 100px;
 }
 
 .our-customers {
@@ -377,7 +376,7 @@ a {
 }
 
 .reviwer-item {
-  background: #fbfbfb;
+  background-color: #fbfbfb;
   width: calc((100% - 2 * 24px) / 3);
   display: flex;
   justify-content: center;
@@ -411,7 +410,7 @@ a {
 /* #endregion Reviwers-Section */
 
 /* #region Fresh-Harvest-Section */
-.fresh-harvest {
+.fresh-harvest-wrapper {
   background-color: #576f35;
   padding: 100px;
 }
@@ -421,7 +420,6 @@ a {
   font-size: 64px;
   line-height: 1;
   text-transform: uppercase;
-  color: #fbfbfb;
   width: 751px;
   margin-bottom: 24px;
 }
@@ -432,7 +430,6 @@ a {
 
 .fresh-harvest-description {
   font-weight: 500;
-  color: #fbfbfb;
   width: 742px;
   margin-bottom: 52px;
 }
@@ -444,12 +441,8 @@ a {
 }
 
 .form-fild {
-  display: flex;
-  flex-direction: column;
   padding: 52px 48px;
   border-radius: 30px;
-  width: 524px;
-  height: 592px;
   background-color: #fbfbfb;
 }
 
@@ -470,52 +463,70 @@ a {
   color: #576f35;
 }
 
-.name {
-  border: 1px solid #858585;
-  border-radius: 30px;
-  width: 428px;
-  height: 52px;
-  padding: 16px 14px;
+.user-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-email-wraper {
   margin-bottom: 16px;
 }
 
-.email {
-  border: 1px solid #858585;
-  border-radius: 30px;
-  width: 428px;
-  height: 52px;
-  padding: 16px 14px;
-  margin-bottom: 16px;
-}
-
-.comment {
-  border: 1px solid #858585;
-  border-radius: 15px;
-  width: 428px;
-  height: 96px;
-  padding: 16px 14px;
+.comment-wraper {
   margin-bottom: 24px;
 }
 
-.name::placeholder,
-.email::placeholder,
-.comment::placeholder {
+.name-email-comment::placeholder,
+.input-comment::placeholder {
   font-weight: 500;
-  text-align: start;
   color: #141414;
 }
+
+.name-email-comment {
+  width: 100%;
+  border: 1px solid #858585;
+  border-radius: 30px;
+  padding: 16px 16px;
+}
+
+.input-comment {
+  border: 1px solid #858585;
+  border-radius: 15px;
+  padding: 16px 16px;
+  width: 100%;
+  height: 96px;
+  background-color: transparent;
+  outline: transparent;
+  resize: none;
+}
+
+.name-email-comment:focus-within,
+.input-comment:focus-within {
+  outline: none;
+  border: 1px solid #7a3145;
+}
+
+/* .name-email-comment:user-valid {
+  outline: none;
+  border: 1px solid #3cbc81;
+}
+
+.name-email-comment:user-invalid {
+  outline: none;
+  border: 1px solid #e74a3b;
+} */
 
 .btn-send {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.11;
   text-transform: uppercase;
-  color: #fbfbfb;
+  color: inherit;
   border-radius: 30px;
   padding: 16px 191px;
   width: 428px;
   height: 52px;
-  background: #7a3145;
+  background-color: #7a3145;
   cursor: pointer;
   transition: color 150ms ease-in-out 0ms,
     background-color 150ms ease-in-out 150ms;
@@ -534,9 +545,7 @@ a {
 .img-social-media {
   border-radius: 30px;
   padding: 52px 48px;
-  width: 524px;
-  height: 592px;
-  background: #7a3145;
+  background-color: #7a3145;
 }
 
 .fres-harvest-img {
@@ -572,9 +581,8 @@ a {
 /* #endregion Fresh-Harvest-Section */
 
 /* #region Footer-Section */
-.footer-section {
-  padding-top: 52px;
-  padding-bottom: 52px;
+.footer-wrapper {
+  padding: 52px 100px;
   background-color: #7a3145;
 }
 
@@ -599,7 +607,6 @@ a {
 
 .footer-description {
   font-weight: 500;
-  color: #fbfbfb;
   width: 265px;
   margin-top: 24px;
 }
@@ -609,7 +616,6 @@ a {
   font-size: 32px;
   line-height: 1;
   text-transform: uppercase;
-  color: #fbfbfb;
   margin-right: 121px;
   width: 228px;
   height: 144px;
@@ -621,11 +627,8 @@ a {
 }
 
 .tel-place {
-  text-align: center;
-  width: 200px;
   font-style: normal;
   font-weight: 700;
-  color: #fbfbfb;
 }
 
 .tel {
